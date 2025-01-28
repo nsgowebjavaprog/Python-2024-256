@@ -1,0 +1,20 @@
+def chatbot():
+    conversion = {
+        "1":"NS LONI-1",
+        "2":"NS LONI-2",
+        "3":"NS LONI-3",
+        "4":"NS LONI-4",
+        "5":"NS LONI-5"
+    }
+    print("Hello I am Chatbot ask me anything")
+    
+    while True:
+        user_input = input("you:").lower()
+        
+        if user_input in conversion:
+            print("Chatbot: ", conversion[user_input])
+        if user_input  == "good by":
+            break
+        else:
+            print("Chatbot: Oh I am not Understand")
+chatbot()            
